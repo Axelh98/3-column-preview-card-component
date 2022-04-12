@@ -1,0 +1,80 @@
+@import 'variables';
+@import 'desktop';
+
+@mixin component_mobile ($color) {
+    background: $color;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+@mixin buttonstyle ($color_font) {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background: $veryLight;
+    color: $color_font;
+    font-weight: 700;
+    border: solid 3px $color_font;
+}
+
+body {
+    background-color: rgb(78, 77, 77);
+}
+
+h3 {
+    font-family: $font_shoulders;
+    font-size: 35px;
+    color: $veryLight;
+}
+p {
+    font-family: $font_lexend;
+    color: $transparent;
+}
+
+
+
+.grid__component {
+    display:  grid;
+    grid-template-columns: repeat(1, fr);
+}
+
+.card__button {
+    margin-top: 20px;
+}
+
+.component__card_1{
+    @include component_mobile($bright)    
+}
+.component__card_2 {
+    @include component_mobile($darkCyan)
+}
+.component__card_3 {
+    @include component_mobile($veryDark)    
+}
+.button_1 {
+    @include buttonstyle($bright)
+}
+.button_1:active {
+    background: transparent;
+    border: solid 3px $veryLight;
+    color: $veryLight
+}
+.button_2 {
+    @include buttonstyle($darkCyan)
+}
+.button_2:active {
+    background: transparent;
+    border: solid 3px $veryLight;
+    color: $veryLight
+}
+.button_3 {
+    @include buttonstyle($veryDark)
+}
+.button_3:active {
+    background: transparent;
+    border: solid 3px $veryLight;
+    color: $veryLight
+}

@@ -1,0 +1,82 @@
+@import 'variables';
+
+@mixin component ($color) {
+    background: $color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+@mixin buttonstyle ($color_font) {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background: $veryLight;
+    color: $color_font;
+    font-weight: 700;
+    border: solid 3px $color_font;
+}
+
+@media (min-width: $desktop) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h3 {
+        font-family: $font_shoulders;
+        color: $veryLight;
+        font-size: 40px;
+        font-weight: 400;
+    }
+    p {
+        font-family: $font_lexend;
+        color: $transparent;
+        font-weight: 400;
+    }
+
+    .grid__component {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 475px;
+        width: 850px;
+    }
+    .component__card_1{
+        @include component($bright);
+    }
+    .component__card_2 {
+        @include component($darkCyan);
+    }
+    .component__card_3 {
+        @include component($veryDark);
+    }
+    .card__button {
+        margin-top: 40px;
+    .button_1  {
+        @include buttonstyle($bright);
+    }
+    .button_1:active {
+        background: transparent;
+        border: solid 3px $veryLight;
+        color: $veryLight
+    }
+    .button_2  {
+        @include buttonstyle($darkCyan);
+    }
+    .button_2:active {
+        background: transparent;
+        border: solid 3px $veryLight;
+        color: $veryLight
+    }
+    .button_3  {
+        @include buttonstyle($veryDark);
+    }
+    .button_3:active {
+        background: transparent;
+        border: solid 3px $veryLight;
+        color: $veryLight
+    }
+    }
+}

@@ -1,0 +1,200 @@
+@media (min-width: 1440px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h3 {
+    font-family: "Big Shoulders Display", cursive;
+    color: hsl(0deg, 0%, 95%);
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  p {
+    font-family: "Lexend Deca", sans-serif;
+    color: hsla(0deg, 0%, 100%, 0.75);
+    font-weight: 400;
+  }
+
+  .grid__component {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 475px;
+    width: 850px;
+  }
+
+  .component__card_1 {
+    background: hsl(31deg, 77%, 52%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 30px;
+  }
+
+  .component__card_2 {
+    background: hsl(184deg, 100%, 22%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 30px;
+  }
+
+  .component__card_3 {
+    background: hsl(179deg, 100%, 13%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 30px;
+  }
+
+  .card__button {
+    margin-top: 40px;
+  }
+  .card__button .button_1 {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background: hsl(0deg, 0%, 95%);
+    color: hsl(31deg, 77%, 52%);
+    font-weight: 700;
+    border: solid 3px hsl(31deg, 77%, 52%);
+  }
+  .card__button .button_1:active {
+    background: transparent;
+    border: solid 3px hsl(0deg, 0%, 95%);
+    color: hsl(0deg, 0%, 95%);
+  }
+  .card__button .button_2 {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background: hsl(0deg, 0%, 95%);
+    color: hsl(184deg, 100%, 22%);
+    font-weight: 700;
+    border: solid 3px hsl(184deg, 100%, 22%);
+  }
+  .card__button .button_2:active {
+    background: transparent;
+    border: solid 3px hsl(0deg, 0%, 95%);
+    color: hsl(0deg, 0%, 95%);
+  }
+  .card__button .button_3 {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background: hsl(0deg, 0%, 95%);
+    color: hsl(179deg, 100%, 13%);
+    font-weight: 700;
+    border: solid 3px hsl(179deg, 100%, 13%);
+  }
+  .card__button .button_3:active {
+    background: transparent;
+    border: solid 3px hsl(0deg, 0%, 95%);
+    color: hsl(0deg, 0%, 95%);
+  }
+}
+body {
+  background-color: rgb(78, 77, 77);
+}
+
+h3 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 35px;
+  color: hsl(0deg, 0%, 95%);
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+
+.grid__component {
+  display: grid;
+  grid-template-columns: repeat(1, fr);
+}
+
+.card__button {
+  margin-top: 20px;
+}
+
+.component__card_1 {
+  background: hsl(31deg, 77%, 52%);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
+.component__card_2 {
+  background: hsl(184deg, 100%, 22%);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
+.component__card_3 {
+  background: hsl(179deg, 100%, 13%);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
+.button_1 {
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  background: hsl(0deg, 0%, 95%);
+  color: hsl(31deg, 77%, 52%);
+  font-weight: 700;
+  border: solid 3px hsl(31deg, 77%, 52%);
+}
+
+.button_1:active {
+  background: transparent;
+  border: solid 3px hsl(0deg, 0%, 95%);
+  color: hsl(0deg, 0%, 95%);
+}
+
+.button_2 {
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  background: hsl(0deg, 0%, 95%);
+  color: hsl(184deg, 100%, 22%);
+  font-weight: 700;
+  border: solid 3px hsl(184deg, 100%, 22%);
+}
+
+.button_2:active {
+  background: transparent;
+  border: solid 3px hsl(0deg, 0%, 95%);
+  color: hsl(0deg, 0%, 95%);
+}
+
+.button_3 {
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  background: hsl(0deg, 0%, 95%);
+  color: hsl(179deg, 100%, 13%);
+  font-weight: 700;
+  border: solid 3px hsl(179deg, 100%, 13%);
+}
+
+.button_3:active {
+  background: transparent;
+  border: solid 3px hsl(0deg, 0%, 95%);
+  color: hsl(0deg, 0%, 95%);
+}
+
+/*# sourceMappingURL=style.css.map */
