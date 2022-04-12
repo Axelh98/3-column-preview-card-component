@@ -1,6 +1,11 @@
 @import 'variables';
 @import 'desktop';
 
+*, *::before, *::after{
+  padding:0;
+  margin:0;
+  box-sizing:border-box
+}
 @mixin component_mobile ($color) {
     background: $color;
     height: 300px;
@@ -21,6 +26,7 @@
 }
 
 body {
+    
     background-color: rgb(78, 77, 77);
 }
 
